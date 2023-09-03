@@ -88,6 +88,34 @@ header {
     text-align: center;
 }
 
+/* o que somos */
+
+.imagem-redonda{
+    border-radius: 8px;
+    background-color: #ddb;
+    padding: 35px;
+}
+
+/* imagem contato */
+
+
+.contato-imagem{
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+ 
+
+/* footer do site  */
+
+
+footer p{
+    background-color: #ddd;
+    color: white;
+    font-weight: bold;
+    padding: 50px;
+    text-align: center;
+}
 
 /*navegação menu mobile*/
 
