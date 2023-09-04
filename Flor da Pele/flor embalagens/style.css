@@ -12,7 +12,7 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     
 }
@@ -28,6 +28,7 @@ header {
 
 .logo img {
     width: 120px;
+    margin-left: -40%;
     
 }
 
@@ -68,7 +69,7 @@ header {
 }
 .sociais{
     padding: 10px;
-    margin-right: 20px;
+    margin-right: -5%;
     
     
 }
@@ -89,7 +90,13 @@ header {
 }
 
 /* o que somos */
-
+.imagens-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
 .imagem-redonda{
     border-radius: 8px;
     background-color: #ddb;
