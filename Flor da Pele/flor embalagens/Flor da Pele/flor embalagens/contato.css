@@ -90,6 +90,7 @@ header {
     font-weight: 600;
     background-color: #00FF08;
     border: 0;
+    color: white;
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
