@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+/*navegação desktop*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titilium Web',sans-serif;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+nav li a{
+    list-style: none;
+}
+
+header {
+    background-color: #ffbd729f;
+    
+    box-sizing: border-box;
+}
+
+div.logo img{
+    width: 180px; 
+    
+}
+
+.menu nav a{
+    color: #fff;
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 19pt;
+    position: relative;
+}
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #FF2500,#FF7100);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: 0.5s;
+
+}
+.menu nav a:hover::after{
+    width: 30px;
+}
+.sociais button{
+    width: 35pt;
+    height: 35pt;
+    background-image: linear-gradient(45deg, #FF2500,#FF7100); 
+    border: none;
+    
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+.sociais button i{
+    font-size: 30px;
+    color: #fff;
+}
+.sociais{
+    padding: 10px;
+    margin-right: 20px;
+    
+    
+}
+.sociais button{
+    margin-right: 8px;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #ffffff;
+    transform: scale(1.05);
+}
+ /* conteudo principal do site */
+
+.parallax-destaques{
+    width: 350px;
+ 
+    /* background-attachment: fixed;  */
+    margin: 35px auto 35px auto;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 1px 2px 5px #00000042;
+    background-image: url(imagens/categoria-caixa-de-pizza-pronta-t1.png);
+    background-attachment: fixed;
+    background-size: auto;
+
+}
+.parallax-o-que-fazemos{
+    width: 350px;
+ 
+    /* background-attachment: fixed;  */
+    margin: 35px auto 35px auto;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 1px 2px 5px #00000042;
+    background-image: url(imagens/categoria-caixa-de-pizza-pronta-t1.png);
+    background-attachment: fixed;
+    background-size: auto;
+
+}
+.parallax-o-que-somos{
+    width: 350px;
+ 
+    /* background-attachment: fixed;  */
+    margin: 35px auto 35px auto;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 1px 2px 5px #00000042;
+    background-image: url(imagens/categoria-caixa-de-pizza-pronta-t1.png);
+    background-attachment: fixed;
+    background-size: auto;
+
+}
+
+
+.titulos{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 24pt;
+    padding: 5px;
+    background-color: #00000063;
+    display: inline-block;
+    /* width: 100px; */
+    margin: 30px auto 30px auto;
+    text-align: center;
+}
+
+/* o que somos */
+
+.imagem-redonda{
+    border-radius: 8px;
+    background-color: #ddb;
+    padding: 35px;
+}
+
+/* imagem contato */
+
+
+.contato-imagem{
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+ 
+/*navegação menu mobile*/
+
+@media only screen and (max-width: 1030px) and (min-width: 750px){
+
+}
+
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+
+.logo img {
+    width: 120px;
+    margin-left: -40%;
+    
+}
+
+.sociais{
+    padding: 10px;
+    margin-right: -5%;
+    
+    
+}
+.sociais button{
+    margin-right: 8px;
+}
+
+
+
+
+/* o que somos */
+.imagens-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+
+
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #ffbd729f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #000000;
+    background-image: url(Resources/FacebookBlanco.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin:1rem;
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #000000;
+    font-size: 18px;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: #000000;
+    text-align: center;
+}
+.footer-menu-container a{
+text-decoration: none;
+color: #000000;    
+}
