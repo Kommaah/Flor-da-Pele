@@ -131,6 +131,14 @@ footer{
     opacity: 1;
 }
 
+/* main do site  */
+.titulo{
+    font-size: 25pt;
+    font-family: roboto;
+    text-align: center;
+    margin:40px auto;
+
+}
 .copyright{
     color: #000000;
     text-align: center;
