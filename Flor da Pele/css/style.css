@@ -7,7 +7,7 @@
     font-family: 'Titilium Web',sans-serif;
 }
 body{
-    background-image: url(imagens/fundocontato.jpg);
+    background-image: url(../imagens/fundocontato.jpg);
 }
 .container{
     max-width: 100%;
@@ -78,6 +78,10 @@ div.logo img{
     margin-right: 8px;
 }
 
+.navbar{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 button:hover,
 form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #ffffff;
@@ -93,7 +97,7 @@ form .btn-enviar input:hover {
     text-align: center;
     border: 1px solid #ddd;
     box-shadow: 1px 2px 5px #00000042;
-    background-image: url(imagens/fundo-parallax.png);
+    background-image: url(../imagens/fundo-parallax.png);
     background-attachment: fixed;
     background-size: 400px;
 
@@ -102,15 +106,19 @@ form .btn-enviar input:hover {
 
 .fundo-slide{
     padding: 50px;
-    background-image: url(imagens/fundo\ pizza.jpg);
+    background-image: url(../imagens/fundo\ pizza.jpg);
     background-position: 10% 10%;
     background-size: cover;
+}
+.box-o-que-somos{
+    background-image:linear-gradient(#fff,#ffd997);
+    padding: 60px;
 }
 
 /* esse box envolve o parallax e os produtos */
 .box-o-que-fazemos{
     padding: 70px;
-    background-image: url(imagens/fundo\ 2.png);
+    background-image: url(../imagens/fundo\ 2.png);
     background-position: 10%;
     background-size: cover;
 
@@ -127,7 +135,7 @@ form .btn-enviar input:hover {
     text-align: center;
     border: 1px solid #ddd;
     box-shadow: 1px 2px 5px #00000042;
-    background-image: url(imagens/fundo-parallax.png);
+    background-image: url(../imagens/fundo-parallax.png);
     background-attachment: fixed;
     background-size: 400px;
 
@@ -140,7 +148,7 @@ form .btn-enviar input:hover {
     text-align: center;
     border: 1px solid #ddd;
     box-shadow: 1px 2px 5px #00000042;
-    background-image: url(imagens/fundo-parallax.png);
+    background-image: url(../imagens/fundo-parallax.png);
     background-attachment: fixed;
     background-size: 400px;
 
