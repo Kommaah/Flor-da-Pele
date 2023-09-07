@@ -10,7 +10,7 @@ body{
     background-image: url(imagens/fundocontato.jpg);
 }
 .container{
-    max-width: 1080px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@ header {
 }
 
 div.logo img{
-    width: 180px; 
+    width: 150px; 
     
 }
 
@@ -52,7 +52,7 @@ div.logo img{
 
 }
 .menu nav a:hover::after{
-    width: 30px;
+    width: 60px;
 }
 .sociais button{
     width: 35pt;
@@ -93,7 +93,7 @@ form .btn-enviar input:hover {
     text-align: center;
     border: 1px solid #ddd;
     box-shadow: 1px 2px 5px #00000042;
-    background-image: url(imagens/parallax.jpg);
+    background-image: url(imagens/fundo-parallax.png);
     background-attachment: fixed;
     background-size: 400px;
 
@@ -106,6 +106,19 @@ form .btn-enviar input:hover {
     background-position: 10% 10%;
     background-size: cover;
 }
+
+/* esse box envolve o parallax e os produtos */
+.box-o-que-fazemos{
+    padding: 70px;
+    background-image: url(imagens/fundo\ 2.png);
+    background-position: 10%;
+    background-size: cover;
+
+}
+.card-text{
+    font-family: roboto;
+    font-size: 14pt;
+}
 .parallax-o-que-fazemos{
     width: 350px;
  
@@ -114,7 +127,7 @@ form .btn-enviar input:hover {
     text-align: center;
     border: 1px solid #ddd;
     box-shadow: 1px 2px 5px #00000042;
-    background-image: url(imagens/parallax.jpg);
+    background-image: url(imagens/fundo-parallax.png);
     background-attachment: fixed;
     background-size: 400px;
 
@@ -127,7 +140,7 @@ form .btn-enviar input:hover {
     text-align: center;
     border: 1px solid #ddd;
     box-shadow: 1px 2px 5px #00000042;
-    background-image: url(imagens/parallax.jpg);
+    background-image: url(imagens/fundo-parallax.png);
     background-attachment: fixed;
     background-size: 400px;
 
@@ -150,10 +163,23 @@ form .btn-enviar input:hover {
 
 .imagem-redonda{
     border-radius: 8px;
-    background-color: #ddb;
+    background-color: #ddddddc6;
     padding: 35px;
 }
-
+.imagem-redonda p{
+    padding:10px;
+    text-align: center;
+    font-size: 14pt;
+}
+#junte-se{
+    font-size: 20pt;
+    letter-spacing: 2px;
+    font-family: cursive;
+    display: block;
+    width: 250px;
+    margin: auto;
+    background-color: #92878789;
+}
 /* imagem contato */
 
 
@@ -197,16 +223,18 @@ form .btn-enviar input:hover {
     margin-right: 8px;
 }
 
-
-
+/* Sombra que fica atras de cada card de produto */
+.sombra-card{
+    box-shadow: 2px 3px 5px rgba(105, 121, 151, 0.5);
+}
 
 /* o que somos */
 .imagens-flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 40px;
-    row-gap: 20px;
+    column-gap: 25px;
+    row-gap: 25px;
     margin-bottom: 25px;
     
 }

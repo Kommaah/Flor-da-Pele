@@ -84,6 +84,28 @@ form .btn-enviar input:hover {
     transform: scale(1.05);
 }
 
+/* parte onde entra os produtos */
+
+.imagens-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 25px;
+    row-gap: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    
+}
+main{
+    background-color: rgba(244, 244, 208, 0.772);
+}
+ .caixas{
+    font-size: 30pt;
+    font-family: roboto;
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(162, 156, 156);
+ }
 
 footer{
     width: 100%;

@@ -85,12 +85,13 @@ form .btn-enviar input:hover {
 }
 
 .interface {
-    max-width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .flex {
     display: flex;
+    
 }
 .btn-contato button {
     padding: 10px 40px;
@@ -116,7 +117,7 @@ section.topo-do-site {
 section.topo-do-site .flex {
     align-items: center;
     justify-content: center;
-    gap: 90px;
+    /* gap: 90px; */
 }
 
 .topo-do-site h1 {
