@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: 'Titilium Web',sans-serif;
 }
-
+body{
+    background-image: url(../imagens/fundocontato.jpg);
+}
 .container{
     max-width: 100%;
     margin: 0 auto;
