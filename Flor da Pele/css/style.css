@@ -172,8 +172,9 @@ form .btn-enviar input:hover {
 
 .imagem-redonda{
     border-radius: 8px;
-    background-color: #ddddddc6;
+    background-color: #ddd;
     padding: 35px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.223);
 }
 .imagem-redonda p{
     padding:10px;
@@ -188,6 +189,7 @@ form .btn-enviar input:hover {
     width: 250px;
     margin: auto;
     background-color: #92878789;
+    cursor: pointer;
 }
 /* imagem contato */
 
