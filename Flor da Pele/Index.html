@@ -19,6 +19,7 @@
   <link rel="shortcut icon" a href="imagens/Logo Flor da Pele.png">
   <title>Home</title>
   <link rel="stylesheet" a href="css/style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -28,10 +29,15 @@
       <div class="menu">
         <nav class="navbar">
 
-          <a href="paginas/produtos.html">Produtos</a>
+          <a href="paginas/produtos.html" >Produtos</a>
           <a href="paginas/sobre.html">Sobre
             nós</a>
           <a href="paginas/Contato.html">Contato</a>
+          
+          <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
+          </div>
+
         </nav>
       </div>
       <div class="sociais">
@@ -39,6 +45,21 @@
               class="fa-brands fa-instagram"></i></a></button>
         <button><a href="https://wa.me/11943495437"><i class="fa-brands fa-whatsapp"></i></a></button>
       </div>
+    </div>
+
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item" class="nav-link"><a href="paginas/produtos.html">Produtos</a></li>
+        <li class="nav-item" class="nav-link"><a href="paginas/sobre.html">Sobre
+            nós</a></li>
+        <li class="nav-item" class="nav-link"><a href="paginas/Contato.html">Contato</a></li>
+      </ul>
+      <div class="sociais">
+        <button><a href="https://instagram.com/flordapeleembalagens?igshid=MzRlODBiNWFlZA=="><i
+              class="fa-brands fa-instagram"></i></a></button>
+        <button><a href="https://wa.me/11943495437"><i class="fa-brands fa-whatsapp"></i></a></button>
+      </div>
+
     </div>
 
   </header>
@@ -175,30 +196,35 @@
 
       <div class="row justify-content-center mb-3 no-gutters">
         <div class="col-10">
-          <img src="imagens/fundooquesomos.jpeg" style="width:800px;height: 400px;" class="img-thumbnail " alt="Imagem responsiva">
+          <img src="imagens/fundooquesomos.jpeg" style="width:800px;height: 400px;" class="img-thumbnail "
+            alt="Imagem responsiva">
         </div>
       </div>
-      
+
       <div class="row justify-content-center">
 
-      
+
         <div class="col-10 imagem-redonda m-3">
-          <p style="font-family: cursive;">A Flor da Pele Embalagens LTDA, é uma fábrica de caixas de pizza, que desde 2006, tem a missão de fornecer
+          <p style="font-family: cursive;">A Flor da Pele Embalagens LTDA, é uma fábrica de caixas de pizza, que desde
+            2006, tem a missão de fornecer
             caixas de pizza de qualidade excepcional.<br>
 
-           <p style="font-family: cursive;"> Nossos valores fundamentais estão ligados ao compromisso com a qualidade e ao foco no cliente, ouvindo suas
+          <p style="font-family: cursive;"> Nossos valores fundamentais estão ligados ao compromisso com a qualidade e
+            ao foco no cliente, ouvindo suas
             necessidades e oferecendo soluções personalizadas.</p>
 
-            <p style="font-family: cursive;">Olhando para o futuro, nossa visão é ser reconhecida como uma das principais fornecedoras de caixas de pizza
+          <p style="font-family: cursive;">Olhando para o futuro, nossa visão é ser reconhecida como uma das principais
+            fornecedoras de caixas de pizza
             de qualidade em todo o país. Queremos continuar a crescer e expandir nossa presença no mercado, mantendo
             sempre nossos valores fundamentais e nosso compromisso com a qualidade e a sustentabilidade.</p>
 
-           <p style="font-family: cursive;"> Desde nossa fundação em 2006, temos trabalhado incansavelmente para alcançar nossos objetivos, e estamos
+          <p style="font-family: cursive;"> Desde nossa fundação em 2006, temos trabalhado incansavelmente para alcançar
+            nossos objetivos, e estamos
             ansiosos para continuar a servir nossos clientes e aprimorar nossa indústria nos anos que virão.</p>
-            
-            <a href="paginas/sobre.html" style="color:black ;">
-            <button id="junte-se" >Saiba mais!</button>
-            
+
+          <a href="paginas/sobre.html" style="color:black ;">
+            <button id="junte-se">Saiba mais!</button>
+
           </a>
 
 
@@ -217,7 +243,7 @@
       <div class="sociais">
         <button><a href="https://instagram.com/flordapeleembalagens?igshid=MzRlODBiNWFlZA=="><i
               class="fa-brands fa-instagram"></i></a></button>
-              <button><a href="https://wa.me/11943495437"><i class="fa-brands fa-whatsapp"></i></a></button>
+        <button><a href="https://wa.me/11943495437"><i class="fa-brands fa-whatsapp"></i></a></button>
       </div>
     </div>
     <ul class="footer-menu-container">

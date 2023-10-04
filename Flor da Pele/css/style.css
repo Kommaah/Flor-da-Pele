@@ -87,6 +87,19 @@ form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #ffffff;
     transform: scale(1.05);
 }
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
  /* conteudo principal do site */
 
 .parallax-destaques{
@@ -202,8 +215,44 @@ form .btn-enviar input:hover {
  
 /*navegação menu mobile*/
 
-@media only screen and (max-width: 1030px) and (min-width: 750px){
-
+@media screen and (max-width: 1010px) {
+.navbar{
+    padding: 1.5rem 4rem;
+}
+.navbar a{
+    display: none;
+}
+.sociais{
+    display: none;
+}
+.mobile-menu-icon {
+    display: block;
+}
+.mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+}
+.mobile-menu .login-button {
+    display: block;
+    padding: 1rem 2rem;
+}
+.mobile-menu .login-button button {
+    width: 100%;
+}
+.open {
+    display: block;
+}
 }
 
 
