@@ -117,13 +117,13 @@ form .btn-enviar input:hover {
 }
 /* fundo atras do slide  */
 
-.fundo-slide{
+/* .fundo-slide{
     
 
     background-position: 10% 10%;
     background-size: cover;
     
-}
+} */
 .box-o-que-somos{
     padding: 60px;
     background-color: white;
@@ -183,6 +183,7 @@ form .btn-enviar input:hover {
 /* o que somos */
 
 .imagem-redonda{
+    margin: 0%;
     border-radius: 8px;
     background-color: #ddd;
     padding: 35px;
@@ -203,6 +204,8 @@ form .btn-enviar input:hover {
     background-color: #92878789;
     cursor: pointer;
 }
+
+
 /* imagem contato */
 
 
