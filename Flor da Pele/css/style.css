@@ -118,21 +118,20 @@ form .btn-enviar input:hover {
 /* fundo atras do slide  */
 
 .fundo-slide{
-    padding: 50px;
+    
 
     background-position: 10% 10%;
     background-size: cover;
     
 }
 .box-o-que-somos{
-    background-image:linear-gradient(#fff,#ffd997);
     padding: 60px;
+    background-color: white;
 }
 
 /* esse box envolve o parallax e os produtos */
 .box-o-que-fazemos{
-    padding: 70px;
-
+    
     background-position: 10%;
     background-size: cover;
 
@@ -366,16 +365,16 @@ form .btn-enviar input:hover {
     }
 }
 
-/* o que somos */
-.imagens-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 25px;
-    row-gap: 25px;
-    margin-bottom: 25px;
-    
+
+
+
+.tamanho-card{
+    width: 16rem;
+    height: 28rem;
+    box-sizing: border-box;
+    text-align: center;
 }
+
 
 
 
