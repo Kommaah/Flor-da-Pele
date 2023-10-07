@@ -104,8 +104,6 @@ form .btn-enviar input:hover {
 
 .parallax-destaques{
     width: 350px;
- 
-    /* background-attachment: fixed;  */
     margin: 35px auto 35px auto;
     text-align: center;
     border: 1px solid #ddd;
@@ -115,19 +113,19 @@ form .btn-enviar input:hover {
     background-size: 400px;
 
 }
-/* fundo atras do slide  */
 
-/* .fundo-slide{
-    
 
-    background-position: 10% 10%;
-    background-size: cover;
-    
-} */
 .box-o-que-somos{
-    padding: 60px;
+    padding: 60px 0px 60px 0px;
     background-color: white;
+    
 }
+
+
+
+
+
+
 
 /* esse box envolve o parallax e os produtos */
 .box-o-que-fazemos{
@@ -142,8 +140,6 @@ form .btn-enviar input:hover {
 }
 .parallax-o-que-fazemos{
     width: 350px;
- 
-    /* background-attachment: fixed;  */
     margin: 35px auto 35px auto;
     text-align: center;
     border: 1px solid #ddd;
@@ -155,8 +151,6 @@ form .btn-enviar input:hover {
 }
 .parallax-o-que-somos{
     width: 350px;
- 
-    /* background-attachment: fixed;  */
     margin: 35px auto 35px auto;
     text-align: center;
     border: 1px solid #ddd;
@@ -180,6 +174,28 @@ form .btn-enviar input:hover {
     text-align: center;
 }
 
+/* ajuste de paralax mobile  */
+@media screen and (max-width:800px)  {
+
+    .parallax-o-que-somos{
+        width: 220px;
+        background-size: 250px;
+    }
+    .titulos{
+        font-size: 15pt;
+    }
+
+    .parallax-o-que-fazemos{
+        width: 220px;
+        background-size: 250px;
+    }
+
+    .parallax-destaques{
+        width: 220px;
+        background-size: 250px;
+    }
+
+}
 /* o que somos */
 
 .imagem-redonda{
@@ -213,6 +229,19 @@ form .btn-enviar input:hover {
     width: 100px;
     display: block;
     margin: auto;
+}
+
+.imagem-frente{
+    width:70%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+@media screen and (max-width: 600px){
+    .imagem-frente{
+        width: 85%;
+    }
+
 }
  
 /*navegação menu mobile*/
