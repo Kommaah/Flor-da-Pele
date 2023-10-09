@@ -153,11 +153,20 @@ footer{
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.256);  
 
 }
+
 .caixaloja{
     height: 500px;
     border-radius: 20px;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.256);
 
+}
+@media screen and (max-width:750px) {
+    .caixaloja{
+        height: 100%;
+    }
+    .equipe{
+        height: 100%;
+    }
 }
 .imagemloja{
     width:400px;
@@ -167,6 +176,20 @@ footer{
 .texto{
     padding: 20px;
     font-size: 13.5pt;
+}
+
+/* mapa do site  */
+
+.mapa{
+    height:300px;
+    width: 600px;
+}
+
+@media screen and  (max-width:700px){
+    .mapa{
+        height:300px;
+        width: 85%;
+    }
 }
 
 /* main do site  */
