@@ -57,16 +57,18 @@ a, a:hover{
     align-items: center;
     justify-content: space-between;
     padding: 10px 25px;
-    background: #ef4b3f;
+    background: #FF7100;
 }
 
 .top-bar span{
     color: white;
+    font-size: 25px;
 }
 
 .top-bar ul{
     list-style: none;
     display: flex;
+    font-size: 30px;
 }
 
 .top-bar li{
@@ -82,7 +84,7 @@ a, a:hover{
 }
 
 nav{
-    background: #222;
+    background: #000000;
     padding: 5px 20px;
     display: flex;
     align-items: center;
@@ -93,11 +95,13 @@ nav a{
 }
 
 nav a:hover{
-    color: #ef4b3f;
+    color: #FF7100;
 }
 
 .logo{
-    flex: 1;
+    padding-left: 30px;
+    
+    
 }
 
 .logo a{
@@ -115,10 +119,11 @@ nav a:hover{
     margin-right: 10px;
 }
 
-.menu{
+.menu {
     display: flex;
-    align-items: center;
+    align-items: right;
     list-style: none;
+    padding-left: 55px;
 }
 
 .menu li{
@@ -128,6 +133,13 @@ nav a:hover{
 .toggle{
     font-size: 30px;
     display: none;
+}
+
+.menu1{
+    display: flex;
+    align-items: right;
+    list-style: none;
+    padding-left: 55px;
 }
 
 @media screen and (max-width: 600px){
@@ -376,7 +388,7 @@ nav a:hover{
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to right, transparent,#ff0);
+    background: linear-gradient(to right, transparent,#FF7100);
     animation: animar1 2s linear infinite;
 }
 
@@ -395,7 +407,7 @@ nav a:hover{
     right: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(to bottom, transparent,#ff0);
+    background: linear-gradient(to bottom, transparent,#FF7100);
     animation: animar2 2s linear infinite;
     animation-delay: 1s;
 }
@@ -414,7 +426,7 @@ nav a:hover{
     right: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to left, transparent,#ff0);
+    background: linear-gradient(to left, transparent,#FF7100);
     animation: animar3 2s linear infinite;
 }
 
@@ -433,7 +445,7 @@ nav a:hover{
     left: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(to top, transparent,#ff0);
+    background: linear-gradient(to top, transparent,#FF7100);
     animation: animar4 2s linear infinite;
     animation-delay:1s ;
 }
