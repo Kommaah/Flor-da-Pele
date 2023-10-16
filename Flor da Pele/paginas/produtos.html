@@ -19,38 +19,69 @@
   <link rel="shortcut icon" a href="../imagens/Logo Flor da Pele.png">
   <title>Produtos</title>
   <link rel="stylesheet" a href="../css/produtos.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 <body>
   <header>
     <div class="container">
-      <div class="logo"><a href="index.html"><img src="../imagens/Logo Flor da Pele.png" alt=""></a></div>
+      <div class="logo"><img src="../imagens/Logo Flor da Pele.png"></div>
       <div class="menu">
         <nav>
 
           <a href="../Index.html"
             style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Home</a>
-          <a href="../paginas/sobre.html"
+            <a href="produtos.html"
+                        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Produtos</a>
+          <a href="sobre.html"
             style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Sobre
             nós</a>
-          <a href="../paginas/Contato.html"
+          <a href="Contato.html"
             style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contato</a>
-        </nav>
+          </nav>
       </div>
+
+      <button onclick="animarMenu()" class="botao" id="btn-menu">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+      </button>
+
+      <script>
+        function animarMenu() {
+          const btn = document.getElementById('botao')
+          btn.classList.toggle('ativar')
+        }
+      </script>
+
+      <div class="menu-mobile" id="menu-mobile">
+        <nav>
+
+          <a href="../Index.html"
+            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Home</a>
+            <a href="produtos.html"
+                        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Produtos</a>
+          <a href="sobre.html"
+            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Sobre
+            nós</a>
+          <a href="Contato.html"
+            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contato</a>
+          </nav>
+      </div>
+
       <div class="sociais">
         <button><a href="https://instagram.com/flordapeleembalagens?igshid=MzRlODBiNWFlZA=="><i
               class="fa-brands fa-instagram"></i></a></button>
-              <button><a href="https://wa.me/11943495437"><i class="fa-brands fa-whatsapp"></i></a></button>
+        <button><a href="https://wa.me/11943495437"><i class="fa-brands fa-whatsapp"></i></a></button>
       </div>
     </div>
-
   </header>
-
+  <script src="../animar.js"></script>
   <main>
     <h3 class="caixas pt-5" style="color: black;">Caixas de Pizza</h3>
     <div class="imagens-flex">
   
-      <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+      <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
         <span></span>
         <span></span>
         <span></span>
@@ -58,10 +89,6 @@
         <img class="card-img-top p-2" src="../imagens/caixa redonda.png" style="width: 83%;margin: auto;"
           alt="Imagem de capa do card" style="border-radius: 20px;">
         <div class="card-body" style="padding:0px 20px 20px 20px;">
-          <p class="card-text">Com uma variedade de formatos, a Caixa de Pizza Circular garante que sua pizza
-            permaneça
-            quente e deliciosa até a última mordida e seja entregue em um design sofisticado
-            .</p>
             <a href="#" class="btn btn-lg btn-dark" data-toggle="modal" data-target="#modalExemplo">Visitar</a>
             <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
               Abrir modal de demonstração
@@ -100,7 +127,7 @@
 
 
 
-          <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+          <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
             <span></span>
             <span></span>
             <span></span>
@@ -108,10 +135,7 @@
             <img class="card-img-top p-2" src="../imagens/REdonda.png" style="width: 89%;margin: auto;"
               alt="Imagem de capa do card" style="border-radius: 20px;">
             <div class="card-body" style="padding:0px 20px 20px 20px;">
-              <p class="card-text">Com uma variedade de formatos, a Caixa de Pizza Circular garante que sua pizza
-                permaneça
-                quente e deliciosa até a última mordida e seja entregue em um design sofisticado
-                .</p>
+
                 <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalExemplo">Visitar</a>
             </div>
           </div>
@@ -120,18 +144,14 @@
 
 
 
-          <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+          <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
               <img class="card-img-top p-2" src="../imagens/PIzza_Redonda_Preta-removebg-preview.png" alt="Imagem de capa do card" style="border-radius: 20px;margin: auto; width: 82.5%; ">
             <div class="card-body">
-              <p class="card-text" style="padding-bottom: 11px;">
-                Com um design meticuloso e materiais de alta
-                qualidade, esta embalagem assegura que suas esfihas se mantenham frescas e saborosas até a última
-                mordida.
-              </p>
+
               <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalExemplo">Visitar</a>
             </div>
           </div>
@@ -142,7 +162,7 @@
         <h3 class="caixas" style="color: black;">Caixas de Pizza Personalizadas</h3>
     <div class="imagens-flex">
   
-          <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+          <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
             <span></span>
             <span></span>
             <span></span>
@@ -150,10 +170,7 @@
             <img class="card-img-top p-2" src="../imagens/Caixa pizza BEge.png" style="width: 83%;margin: auto;"
               alt="Imagem de capa do card" style="border-radius: 20px;">
             <div class="card-body" style="padding:0px 20px 20px 20px;">
-              <p class="card-text">Com uma variedade de formatos, a Caixa de Pizza Circular garante que sua pizza
-                permaneça
-                quente e deliciosa até a última mordida e seja entregue em um design sofisticado
-                .</p>
+
                 <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalExemplo">Visitar</a>
             </div>
           </div>
@@ -162,7 +179,7 @@
 
 
 
-          <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+          <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
             <span></span>
             <span></span>
             <span></span>
@@ -170,10 +187,7 @@
             <img class="card-img-top p-2" src="../imagens/Caixa de Pizza 1 Frente.png" style="width: 68%;margin: auto;margin-bottom: 23px;"
               alt="Imagem de capa do card" style="border-radius: 20px;">
             <div class="card-body" style="padding:0px 20px 20px 20px;">
-              <p class="card-text">Com uma variedade de formatos, a Caixa de Pizza Circular garante que sua pizza
-                permaneça
-                quente e deliciosa até a última mordida e seja entregue em um design sofisticado
-                .</p>
+       
                 <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalExemplo" >Visitar</a>
             </div>
           </div>
@@ -182,7 +196,7 @@
 
 
 
-          <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+          <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
             <span></span>
             <span></span>
             <span></span>
@@ -190,10 +204,7 @@
             <img class="card-img-top p-2" src="../imagens/Esfiha Fran.png" style="width:88%;margin: auto;margin-bottom: 36px;"
               alt="Imagem de capa do card" style="border-radius: 20px;">
             <div class="card-body" style="padding:0px 20px 20px 20px;">
-              <p class="card-text">Com uma variedade de formatos, a Caixa de Pizza Circular garante que sua pizza
-                permaneça
-                quente e deliciosa até a última mordida e seja entregue em um design sofisticado
-                .</p>
+
                 <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalExemplo">Visitar</a>
             </div>
           </div>
@@ -203,7 +214,7 @@
         <h3 class="caixas" style="color: black;">Caixas de Pizza do Mês</h3>
         <div class="imagens-flex">
       
-              <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+              <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -211,15 +222,12 @@
                 <img class="card-img-top p-2" src="../imagens/Outubro Rosa-1.png" style="width: 90%;margin: auto;margin-bottom: 20px;margin-top: 10px;"
                   alt="Imagem de capa do card" style="border-radius: 20px;">
                 <div class="card-body" style="padding:0px 20px 20px 20px;">
-                  <p class="card-text">Com uma variedade de formatos, a Caixa de Pizza Circular garante que sua pizza
-                    permaneça
-                    quente e deliciosa até a última mordida e seja entregue em um design sofisticado
-                    .</p>
+
                     <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalExemplo">Visitar</a>
                 </div>
               </div>
 
-              <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+              <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -227,10 +235,7 @@
                 <img class="card-img-top p-2" src="../imagens/Caixa dia das crianças-1.png" style="width: 93%;margin: auto;margin-bottom: 10px;"
                   alt="Imagem de capa do card" style="border-radius: 20px;">
                 <div class="card-body" style="padding:0px 20px 20px 20px;">
-                  <p class="card-text">Com uma variedade de formatos, a Caixa de Pizza Circular garante que sua pizza
-                    permaneça
-                    quente e deliciosa até a última mordida e seja entregue em um design sofisticado
-                    .</p>
+
                     <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalExemplo">Visitar</a>
                 </div>
               </div>  
@@ -239,7 +244,7 @@
         <h3 class="caixas" style="color: black;">Caixas de Esfiha</h3>
     <div class="imagens-flex">
   
-      <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+      <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
         <span></span>
             <span></span>
             <span></span>
@@ -247,10 +252,7 @@
         <img class="card-img-top p-2" src="../imagens/Caixa esfiha.png" style="width: 83%;margin: auto;margin-bottom: 25px;margin-top: 37px;"
           alt="Imagem de capa do card" style="border-radius: 20px;">
         <div class="card-body" style="padding:0px 20px 20px 20px;">
-          <p class="card-text">Com uma variedade de formatos, a Caixa de Pizza Circular garante que sua pizza
-            permaneça
-            quente e deliciosa até a última mordida e seja entregue em um design sofisticado
-            .</p>
+
             <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalExemplo">Visitar</a>
         </div>
       </div>
@@ -259,7 +261,7 @@
 
 
 
-      <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+      <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
         <span></span>
             <span></span>
             <span></span>
@@ -267,10 +269,7 @@
         <img class="card-img-top p-2" src="../imagens/Caixa amarela esfiha.png" style="width: 87%;margin: auto;margin-bottom: 9px;"
           alt="Imagem de capa do card" style="border-radius: 20px;">
         <div class="card-body" style="padding:0px 20px 20px 20px;">
-          <p class="card-text">Com uma variedade de formatos, a Caixa de Pizza Circular garante que sua pizza
-            permaneça
-            quente e deliciosa até a última mordida e seja entregue em um design sofisticado
-            .</p>
+
             <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalExemplo">Visitar</a>
         </div>
       </div>
@@ -279,18 +278,14 @@
 
 
 
-          <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+          <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
               <img class="card-img-top p-2" src="../imagens/is fi rra (2).png" alt="Imagem de capa do card" style="border-radius: 20px; margin-bottom: 15px; margin-top: 20px; width: 100%;">
             <div class="card-body">
-              <p class="card-text" style="padding-bottom: 11px;">
-                Com um design meticuloso e materiais de alta
-                qualidade, esta embalagem assegura que suas esfihas se mantenham frescas e saborosas até a última
-                mordida.
-              </p>
+     
               <a href="#" class="btn btn-dark btn-lg"data-toggle="modal" data-target="#modalExemplo">Visitar</a>
             </div>
            
@@ -301,16 +296,14 @@
         <h3 class="caixas" style="color: black;">Caixas de Esfiha Personalizadas</h3>
     <div class="imagens-flex">
   
-          <div class="card sombra-card" style="width: 16rem; height: 31rem;box-sizing: border-box; text-align: center;">
+          <div class="card sombra-card" style="width: 16rem; height: 20rem;box-sizing: border-box; text-align: center;">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             <img class="card-img-top p-2" src="../imagens/Caixa esfiha.png" style="border-radius: 20px; width:100%;margin-bottom: 9px;">
             <div class="card-body">
-              <p class="card-text" style="padding-bottom: 23px;">Com um design sofisticado, mantém suas pizzas quentes e frescas por mais tempo. Eleve
-                
-                experiência de suas entregas com a qualidade da Flor da Pele.</p>
+
                 <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalExemplo">Visitar</a>
             </div>
           </div>
@@ -319,7 +312,7 @@
 
 
 
-          <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+          <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
             <span></span>
             <span></span>
             <span></span>
@@ -327,10 +320,7 @@
             <img class="card-img-top p-2" src="../imagens/Caixa generica esfiha.png" style="width: 90%;margin: auto;margin-bottom: 10px;"
               alt="Imagem de capa do card" style="border-radius: 20px;">
             <div class="card-body" style="padding:0px 20px 20px 20px;">
-              <p class="card-text">Com uma variedade de formatos, a Caixa de Pizza Circular garante que sua pizza
-                permaneça
-                quente e deliciosa até a última mordida e seja entregue em um design sofisticado
-                .</p>
+
                 <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalExemplo">Visitar</a>
             </div>
           </div>
@@ -339,18 +329,14 @@
 
 
 
-          <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+          <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
               <img class="card-img-top p-2" src="../imagens/Mega esfiha.png" alt="Imagem de capa do card" style="border-radius: 20px;margin: auto; width: 69.5%;">
             <div class="card-body">
-              <p class="card-text" style="padding-bottom: 11px;">
-                Com um design meticuloso e materiais de alta
-                qualidade, esta embalagem assegura que suas esfihas se mantenham frescas e saborosas até a última
-                mordida.
-              </p>
+
               <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalExemplo">Visitar</a>
             </div>
           </div>
@@ -360,7 +346,7 @@
         <h3 class="caixas" style="color: black;">Caixas de Esfiha do Mês</h3>
         <div class="imagens-flex">
       
-              <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+              <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -368,10 +354,7 @@
                 <img class="card-img-top p-2" src="../imagens/Frozen caixa.png" style="width: 80%;margin: auto;margin-bottom: 10px;margin-top: 10px;"
                   alt="Imagem de capa do card" style="border-radius: 20px;">
                 <div class="card-body" style="padding:0px 20px 20px 20px;">
-                  <p class="card-text">Com uma variedade de formatos, a Caixa de Pizza Circular garante que sua pizza
-                    permaneça
-                    quente e deliciosa até a última mordida e seja entregue em um design sofisticado
-                    .</p>
+
                     <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalExemplo">Visitar</a>
                 </div>
               </div>
@@ -381,7 +364,7 @@
             <h3 class="caixas" style="color: black;">Caixas Pizza Trem</h3>
         <div class="imagens-flex">
       
-              <div class="card sombra-card" style="width: 16rem; height: 31rem; box-sizing: border-box;">
+              <div class="card sombra-card" style="width: 16rem; height: 20rem; box-sizing: border-box;">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -389,10 +372,7 @@
                 <img class="card-img-top p-2" src="../imagens/Caixa TRem.png" style="width: 110%;margin: auto;margin-bottom: 17px;margin-top: 10px;"
                   alt="Imagem de capa do card" style="border-radius: 20px;">
                 <div class="card-body" style="padding:0px 20px 20px 20px;">
-                  <p class="card-text">Com uma variedade de formatos, a Caixa de Pizza Circular garante que sua pizza
-                    permaneça
-                    quente e deliciosa até a última mordida e seja entregue em um design sofisticado
-                    .</p>
+       
                     <a href="#" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalExemplo">Visitar</a>
                 </div>
               </div>
@@ -403,25 +383,31 @@
   <!-- footer  -->
 
   <footer>
-    <img src="../imagens/Logo e tipografia.png" alt="" class="logo">
+    <img src="../imagens/Logo e tipografia.png" alt="" class="logof">
     <div class="social-icons-container">
 
-      <div class="sociais">
+      <div class="sociaisf">
         <button><a href="https://instagram.com/flordapeleembalagens?igshid=MzRlODBiNWFlZA=="><i
               class="fa-brands fa-instagram"></i></a></button>
               <button><a href="https://wa.me/11943495437"><i class="fa-brands fa-whatsapp"></i></a></button>
       </div>
     </div>
     <ul class="footer-menu-container">
-      <li class="menu-item"><a href="../paginas/sobre.html"
+      
+      <li class="menu-item"><a href="../Index.html"
+        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Home</a>
+    </li>
+      
+    <li class="menu-item"><a href="produtos.html"
+        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Produtos</a>
+    </li>
+      <li class="menu-item"><a href="sobre.html"
           style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Sobre</a>
       </li>
-      <li class="menu-item"><a href="../paginas/Contato.html"
+      <li class="menu-item"><a href="Contato.html"
           style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contato</a>
       </li>
-      <li class="menu-item"><a href="../paginas/Index.html"
-          style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Home</a>
-      </li>
+
     </ul>
     <span class="copyright" style="font-family: cursive;">&copy;2023,Todos os direitos reservados a Flor da Pele.</span>
   </footer>

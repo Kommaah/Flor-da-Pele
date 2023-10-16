@@ -9,28 +9,71 @@
 body{
     background-image: url(../imagens/fundocontato.jpg);
 }
-.container{
-    max-width:100%;
+.botao {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: 2px solid #ccc;
+    background: transparent;
+    cursor: pointer;
+    transition: .2s;
+    display: none;
+}
+
+
+.linha {
+    position: relative;
+    height: 3px;
+    background: #ccc;
+    width: 25px;
+    display: none;
+    margin: 5px auto;
+    transform-origin: center;
+    transition: .2s;
+}
+
+.botao.ativar .linha:nth-child(1) {
+    transform: translateY(36px);
+    rotate: -45deg;
+    background-color: red;
+}
+
+.botao.ativar .linha:nth-child(3) {
+    transform: translateY(-36px);
+    rotate: 45deg;
+    background-color: red;
+}
+
+.botao.ativar .linha:nth-child(2) {
+    width: 0;
+}
+
+.container {
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    
-}
-nav li a{
-    list-style: none;
+
 }
 
 header {
-    background-color: #000000;
-    
-    box-sizing: border-box;
+    background-color: black;
+    width: 100%;
+    padding: 15px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
-div.logo img{
-    width: 180px; 
-    
+.logo {
+    width: 25%;
+}
+
+.logo img {
+    width: 150px;
+    cursor: pointer;
 }
 
 .menu nav a{
@@ -54,6 +97,14 @@ div.logo img{
 .menu nav a:hover::after{
     width: 55px;
 }
+.menu nav a:hover::after {
+    width: 30px;
+}
+
+.menu nav a:hover {
+    color: #ffffff;
+}
+
 .sociais button{
     width: 35pt;
     height: 35pt;
@@ -78,11 +129,40 @@ div.logo img{
     margin-right: 8px;
 }
 
-button:hover,
-form .btn-enviar input:hover {
-    box-shadow: 0px 0px 8px #ffffff;
-    transform: scale(1.05);
-}
+.sociais button:hover {
+    transform: scale(0.9);
+    transition: transform 0.5s;
+    }
+
+    .sociaisf button{
+        width: 35pt;
+        height: 35pt;
+        background-image: linear-gradient(45deg, #FF2500,#FF7100); 
+        border: none;
+        
+        border-radius: 8px;
+        cursor: pointer;
+    
+    }
+    .sociaisf button i{
+        font-size: 30px;
+        color: #fff;
+    }
+    .sociaisf{
+        padding: 10px;
+        margin-right: 20px;
+        
+        
+    }
+    .sociaisf button{
+        margin-right: 8px;
+    }
+    
+    .sociaisf button:hover {
+        transform: scale(0.9);
+        transition: transform 0.5s;
+        }
+
 
 .interface {
     max-width: 100%;
@@ -108,10 +188,6 @@ button:hover,
 form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #ffffff;
     transform: scale(1.05);
-}
-
-section.topo-do-site {
-    /* padding: 40px 4%; */
 }
 
 section.topo-do-site .flex {
@@ -169,7 +245,7 @@ footer{
     flex-direction: column;
 }
 
-.logo{
+.logof{
     height: 80px;
     margin-bottom: 1rem;
 }
@@ -205,4 +281,70 @@ footer{
 .footer-menu-container a{
 text-decoration: none;
 color: #ffffff;    
+}
+
+
+.menu-mobile {
+    background-color: #1111119f;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.menu-mobile nav a {
+    display: block;
+    color: #ffffff;
+    padding: 20px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    font-size: 16pt;
+}
+
+.menu-mobile nav a:hover {
+    background-color: #383838;
+}
+
+.btn-menu,
+.btn-menu-close {
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1110px) {
+    .linha {
+        display: block;
+    }
+
+    .botao {
+        display: block;
+        position: right;
+    }
+
+    .menu,
+    .sociais {
+        display: none;
+    }
+
+    .logo {
+        position: left;
+    }
+
+    .btn-menu,
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-mobile.abrir {
+        height: calc(100vh - 140px);
+        visibility: visible;
+        height: 38vh;
+    }
 }

@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/97482332fc.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" a href="imagens/Logo Flor da Pele.png">
+    <link rel="shortcut icon" a href="../imagens/Logo Flor da Pele.png">
     <title>Página de contato</title>
     <link rel="stylesheet" a href="../css/contato.css">
 </head>
@@ -24,26 +24,58 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo"><a href="../index.html"><img src="../imagens/Logo Flor da Pele.png" alt=""></a></div>
-            <div class="menu">
-                <nav>
-                    <a href="../Index.html"
-                        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Home</a>
-                    <a href="../paginas/produtos.html"
-                        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Produtos</a>
-                    <a href="../paginas/sobre.html"
-                        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Sobre
-                        nós</a>
-                </nav>
-            </div>
-            <div class="sociais">
-                <button><a href="https://instagram.com/flordapeleembalagens?igshid=MzRlODBiNWFlZA=="><i
-                            class="fa-brands fa-instagram"></i></a></button>
-                            <button><a href="https://wa.me/11943495437"><i class="fa-brands fa-whatsapp"></i></a></button>
-            </div>
+          <div class="logo"><img src="../imagens/Logo Flor da Pele.png"></div>
+          <div class="menu">
+            <nav>
+    
+              <a href="../Index.html"
+                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Home</a>
+                <a href="produtos.html"
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Produtos</a>
+              <a href="sobre.html"
+                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Sobre
+                nós</a>
+              <a href="Contato.html"
+                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contato</a>
+              </nav>
+          </div>
+    
+          <button onclick="animarMenu()" class="botao" id="btn-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+          </button>
+    
+          <script>
+            function animarMenu() {
+              const btn = document.getElementById('botao')
+              btn.classList.toggle('ativar')
+            }
+          </script>
+    
+          <div class="menu-mobile" id="menu-mobile">
+            <nav>
+    
+              <a href="../Index.html"
+                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Home</a>
+                <a href="produtos.html"
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Produtos</a>
+              <a href="sobre.html"
+                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Sobre
+                nós</a>
+              <a href="Contato.html"
+                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contato</a>
+              </nav>
+          </div>
+    
+          <div class="sociais">
+            <button><a href="https://instagram.com/flordapeleembalagens?igshid=MzRlODBiNWFlZA=="><i
+                  class="fa-brands fa-instagram"></i></a></button>
+            <button><a href="https://wa.me/11943495437"><i class="fa-brands fa-whatsapp"></i></a></button>
+          </div>
         </div>
-    </header>
-
+      </header>
+      <script src="../animar.js"></script>
     <main>
         <div class="container">
             <div class="row no-gutters justify-content-center">
@@ -54,7 +86,7 @@
             <div class="interface">
                 <div class="flex">
                     <div class="img-topo-site topo-do-site">
-                        <img src="../imagens/homem.png" style="width: 330px" alt="">
+                        <img src="../imagens/homemcontato.png" style="width: 380px" alt="">
                     </div>
                 </div>
             </div>
@@ -122,26 +154,32 @@
     <!-- footer  -->
 
     <footer>
-        <img src="../imagens/Logo e tipografia.png" alt="" class="logo">
+        <img src="../imagens/Logo e tipografia.png" alt="" class="logof">
         <div class="social-icons-container">
 
-            <div class="sociais">
+            <div class="sociaisf">
                 <button><a href="https://instagram.com/flordapeleembalagens?igshid=MzRlODBiNWFlZA=="><i
                             class="fa-brands fa-instagram"></i></a></button>
                             <button><a href="https://wa.me/11943495437"><i class="fa-brands fa-whatsapp"></i></a></button>
             </div>
         </div>
         <ul class="footer-menu-container">
-            <li class="menu-item"><a href="../paginas/sobre.html"
-                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Sobre</a>
-            </li>
-            <li class="menu-item"><a href="../paginas/produtos.html"
-                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Produtos</a>
-            </li>
+      
             <li class="menu-item"><a href="../Index.html"
-                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Home</a>
+              style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Home</a>
+          </li>
+            
+          <li class="menu-item"><a href="produtos.html"
+              style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Produtos</a>
+          </li>
+            <li class="menu-item"><a href="sobre.html"
+                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Sobre</a>
             </li>
-        </ul>
+            <li class="menu-item"><a href="Contato.html"
+                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contato</a>
+            </li>
+      
+          </ul>
         <span class="copyright" style="font-family:cursive" ;>&copy;2023,Todos os direitos reservados a Flor da
             Pele.</span>
     </footer>
